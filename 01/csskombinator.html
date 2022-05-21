@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinator</title>
+    <style>
+        #container p{
+            color: red;
+        }
+
+        #container2 + p{
+            color: red;
+        }
+
+        #container2 > p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Notes : Terdapat 3 CSS Combinator, diantaranya :
+
+        Descendant Selector-->
+    <div id="container">
+        <h3>Judul Web Application</h3>
+        <p>Sample text</p>
+        <p>Sample text</p>
+    </div>
+
+    <!-- Adjecent disabling selector -->
+    <div id="container2">
+        <h3>Judul Web Application</h3>
+        <p>Sample text 1</p>
+        <p>Sample text 2</p>
+    </div>
+    <p>Paragraf after container</p>
+    
+    <!-- Child selector -->
+    <div id="container3">
+        <h3>Judul Web Application</h3>
+        <p>Sample text 1</p>
+        <b><p>Sample text 3</p></b>
+    </div>
+</body>
+</html>
