@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Global Variable & Local Variable</title>
+    </head>
+    <body>
+        <script>
+            var nama = "Candra Delvano";
+
+            function sayHello(){
+                var name = "Candra Delvano"; //local variable
+            }
+            //variable bisa langsung di akses
+            console.log(nama);
+            
+            //local variable tidak bisa di akses
+            console.log(name);
+        </script>
+    </body>
+</html>
