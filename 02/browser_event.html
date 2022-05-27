@@ -15,6 +15,7 @@
             <option value="US">United States</option>
         </select>
         <button onclick="klikSaya()">Klik Saya</button>
+        <img src="../01/images/img1.jpg" alt="" width="200" onmouseover="gantiWarna()" id="gambarKu">
         <script>
             function klikSaya(){
                 alert('Anda melakukan klik button');
@@ -28,6 +29,13 @@
                 var nama = document.getElementById('nama').value;
                 console.log('Anda melakukan ketikan'+nama);
             }
+
+            function gantiWarna(){
+                console.log('ganti warna');
+                var gambar = document.getElementById('gambarKu');
+                gambar.style.visibility = 'hidden';
+            }
+
         </script>
     </body>
 </html>
