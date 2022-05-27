@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Browser Event</title>
     </head>
-    <body>
+    <body onload="greeting()">
         <input type="text" id="nama" name="nama" onkeyup="ketik()">
         <br> Nama Saya Adalah <span class="nama"></span>
         <select name="negara" onchange="pilihNegara()">
@@ -35,6 +35,28 @@
                 var gambar = document.getElementById('gambarKu');
                 gambar.style.visibility = 'hidden';
             }
+
+            function greeting(){
+                alert('Hallo Pengguna');
+            }
+
+            //deklarasi fungsi biasa
+            hello = function hello(){
+                console.log('say hello');
+            }
+
+            //deklarasi fungsi dengan arrow
+            hello2 = () =>{
+                console.log('hello dengan arrow function');
+            }
+
+            // IFE
+            (function(){
+                console.log('immediately invoked function');
+            })();
+
+            hello();
+            hello2();
 
         </script>
     </body>
