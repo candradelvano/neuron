@@ -16,7 +16,6 @@
             console.log(nama);
             console.log(umur);
             console.log(sudahMenikah);
-            console.log(anak);
 
             //type data object
             const person = {
@@ -28,10 +27,13 @@
             var anak = ['anak1','anak2']; //array
             console.log(anak);
             
-            const functionExample = () =>{
-                console.log('Hello World');
+            const functionExample = (name) =>{
+                return 'Hello World ' + name;
             }
             console.log(typeof functionExample);
+
+            var greeting = functionExample('Candra Delvano');
+            console.log(greeting);
         </script>
     </body>
 </html>
