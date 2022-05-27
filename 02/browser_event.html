@@ -7,7 +7,8 @@
         <title>Browser Event</title>
     </head>
     <body>
-        <input type="text" id="nama" name="nama" onke="ketik()">
+        <input type="text" id="nama" name="nama" onkeyup="ketik()">
+        <br> Nama Saya Adalah <span class="nama"></span>
         <select name="negara" onchange="pilihNegara()">
             <option value="ID">Indonesia</option>
             <option value="MY">Malaysia</option>
@@ -24,7 +25,8 @@
             }
 
             function ketik(){
-                console.log('Anda melakukan ketikan');
+                var nama = document.getElementById('nama').value;
+                console.log('Anda melakukan ketikan'+nama);
             }
         </script>
     </body>
