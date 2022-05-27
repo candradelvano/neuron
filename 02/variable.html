@@ -8,7 +8,14 @@
     </head>
     <body>
         <script>
-            //type data
+
+            //pass value by reference
+            var a = 10;
+            var b = 2;
+            var c = a+b;
+            console.log(c);
+
+            //type data primitive
             var nama = "Candra Delvano"; //string
             var umur = 25; //integer
             var sudahMenikah = true; //boolean
@@ -34,6 +41,30 @@
 
             var greeting = functionExample('Candra Delvano');
             console.log(greeting);
+
+            function calculator(num1, num2, operator){
+                if(operator == '+'){
+                    return num1 + num2;
+                }else if(operator == '-'){
+                    return num1 - num2;
+                }else if(operator == '*'){
+                    return num1 * num2;
+                }else if(operator == '/'){
+                    return num1 / num2;
+                }else{
+                    return 'operator tidak dikenali';
+                }
+            }
+
+            var hasil1 = calculator(10,5,'+');
+            console.log('10 + 5 = ' + hasil1);
+            var hasil2 = calculator(7,7,'-');
+            console.log('7 - 7 = ' + hasil2);
+            var hasil3 = calculator(4,2,'*');
+            console.log('4 * 2 = ' + hasil3);
+            var hasil4 = calculator(8,9,'/');
+            console.log('8 / 9 = ' + hasil4);
+            
         </script>
     </body>
 </html>
