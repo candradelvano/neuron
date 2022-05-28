@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Listener</title>
+    </head>
+    <body>
+        <button id="btnKlikSaya" type="button">Klik Saya</button>
+        <img src="../01/images/img1.jpg" alt="" width="300px" id="img">
+        <button id="btn2">Pisah Function</button>
+        <p id="date"></p>
+        <script>
+
+            document.getElementById('btnKlikSaya').addEventListener('click', function(){
+                alert('Anda melakukan klik button');
+                document.getElementById('img').style.visibility = 'hidden';
+            });
+
+            document.getElementById('btn2').addEventListener('click',displayDate);
+            
+            function displayDate(){
+                document.getElementById('date').innerHTML = Date();
+            }
+
+            //addeventlistener when img is hover
+            document.getElementById('img').addEventListener('mouseover', function(){
+                document.getElementById('img').style.visibility = 'hidden';
+                setTimeout(function(){
+                    alert('tadaaa, gambarnya ilang');
+                },300);
+            });
+
+            //add event listener when btn2 klik open webcam
+            
+        </script>
+    </body>
+</html>
