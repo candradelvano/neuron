@@ -39,12 +39,12 @@
             ];
 
             var i = 0;
-            setInterval(function(){
+            var cakapInterval = setInterval(function(){
                 if(i != 5){
                     document.getElementById('iniPercakapan').innerHTML += percakapan[i];
                     i++;
                 }else{
-                    clearInterval();
+                    clearInterval(cakapInterval);
                 }
             }, 5000);
         </script>
