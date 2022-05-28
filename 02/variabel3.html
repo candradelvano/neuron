@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var, Let dan Const</title>
+</head>
+<body>
+    <script>
+        var name = "Candra";
+        console.log(name);
+        var name = "Delvano";
+        console.log(name);
+
+        let age = 23;
+        console.log(age);
+        //let age = 17; // error let tidak boleh di redeclare
+        console.log(age);
+
+        const last_name = 'Putra';
+
+        const greeting = "say hello";
+        var time = 4;
+
+        if(time > 3){
+            const greeting = "say hello from function";
+        }
+
+        console.log(greeting);
+
+    </script>
+</body>
+</html>
