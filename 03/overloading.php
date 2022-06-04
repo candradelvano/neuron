@@ -17,7 +17,7 @@ class Shape{
     $circle = new Shape();
     echo $circle->area(10);
 
-    echo "<br>";
+    echo "\n";
     $rect = new shape();
     echo $rect->area(10,10);
 
