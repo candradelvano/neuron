@@ -1,7 +1,7 @@
 <?php
 
 class Process{
-    function returnInteger():integer{
+    function returnInteger():int{
         return 10;
     }
     function returnArray():array{
