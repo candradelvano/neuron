@@ -10,8 +10,8 @@
     $dsn = 'mysql:host=localhost;dbname=test';
     $pdo = new PDO($dsn, 'root', '');
     $stm = $pdo->prepare("INSERT INTO test (name, created_at) VALUES (?,?)");
-    $stm->execute(['candra delvano',date("Y-m-d H:i:s")]);
+    $stm->execute(['candra delvano test',date("Y-m-d H:i:s")]);
 
     //method chaining
-    $stm = $pdo->prepare("INSERT INTO test (name, created_at) VALUES (?,?)")->execute(['candra delvano',date("Y-m-d H:i:s")]);
+    $stm = $pdo->prepare("INSERT INTO test (name, created_at) VALUES (?,?)")->execute(['candra delvano putra',date("Y-m-d H:i:s")]);
 ?>
