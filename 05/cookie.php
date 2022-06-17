@@ -11,4 +11,7 @@
     $pdo = new PDO($dsn, 'root', '');
     $stm = $pdo->prepare("INSERT INTO test (name, created_at) VALUES (?,?)");
     $stm->execute(['candra delvano',date("Y-m-d H:i:s")]);
+
+    //method chaining
+    $stm = $pdo->prepare("INSERT INTO test (name, created_at) VALUES (?,?)")->execute(['candra delvano',date("Y-m-d H:i:s")]);
 ?>
