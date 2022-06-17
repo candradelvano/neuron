@@ -13,7 +13,7 @@
     if($fileSize >5000000){
         echo "ukuran file terlalu besar";
     }
-
+    
     if(in_array($type, ['image/jpeg', 'image/png'])){
         move_uploaded_file($_FILES['file']['tmp_name'], 'upload/'.$fileName);
         echo "OK";
